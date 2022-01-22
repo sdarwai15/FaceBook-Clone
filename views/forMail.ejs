@@ -1,0 +1,15 @@
+<% include ./partials/header.ejs %>
+
+<div class="container">
+	<div class="card mt-5" style="width: 90%; height: 95%;border: none;">
+		<form action="/reset" method="post">
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Enter your email <address></address></label>
+				<input name="emailCheck" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</div>
+
+<% include ./partials/footer.ejs %>

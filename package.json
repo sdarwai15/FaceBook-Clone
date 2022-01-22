@@ -1,0 +1,27 @@
+{
+  "name": "facebook",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.2",
+    "googleapis": "^92.0.0",
+    "http-errors": "~1.6.3",
+    "jimp": "^0.16.1",
+    "mongoose": "^6.0.12",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.7.2",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "uuid": "^8.3.2"
+  }
+}
