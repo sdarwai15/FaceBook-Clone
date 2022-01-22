@@ -1,11 +1,11 @@
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 
-const CLIENT_ID = `577934109240-ecs81ac7fjbqavomls4qnkapf0bgqbgk.apps.googleusercontent.com`;
+const CLIENT_ID = ``;
 
-const CLIENT_SECRET = `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`;
+const CLIENT_SECRET = ``;
 const REDIRECT_URI = `https://developers.google.com/oauthplayground`;
-const REFRESH_TOKEN = `1//041bdB1wH0gdqCgYIARAAGAQSNwF-L9IrfZI5nOPGYZ3hu8lxCtEvznhmVZSoVha8nqhTXrhVY22Gt3XQKlEYjzP1BaFa4A6mkYA`;
+const REFRESH_TOKEN = ``;
 
 const oauthclient = new google.auth.OAuth2(
 	CLIENT_ID,
@@ -22,7 +22,7 @@ async function sendMail(receiver, text) {
 			service: "gmail",
 			auth: {
 				type: "OAuth2",
-				user: "darwaisourabh@gmail.com",
+				user: "",
 				clientId: CLIENT_ID,
 				clientSecret: CLIENT_SECRET,
 				refreshToken: REFRESH_TOKEN,
@@ -31,7 +31,7 @@ async function sendMail(receiver, text) {
 		});
 
 		const mailOpts = {
-			from: "darwaisourabh@gmail.com",
+			from: "",
 			to: receiver,
 			subject: "Check",
 			text: "kuch bhi kuch",
